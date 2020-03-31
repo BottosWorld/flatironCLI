@@ -1,4 +1,4 @@
-class RecipeCLI::class
+class RecipeCLI::CLI
   
   def start
     puts "Hello there!"
