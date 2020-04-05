@@ -1,5 +1,5 @@
 class RecipeCLI::Recipes
-  attr_accessor :ingr :mealtype :time
+  attr_accessor :ingr, :mealtype, :time
   @@all = []
   
   def initialize(hash)

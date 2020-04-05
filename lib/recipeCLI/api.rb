@@ -8,11 +8,12 @@ class RecipeCLI::API
       
     else
       recipe_obj = {
-        mealtype: = @recipes_hash["Mealtype"],
-        ingr: = @recipes_hash["Ingr"]
-        time: = @recipes_hash["Time"]
+        mealtype: @recipes_hash["Mealtype"],
+        ingr: @recipes_hash["Ingr"],
+        time: @recipes_hash["Time"]
       }
     RecipeCLI::Recipes.new(recipe_obj)
+    end
   end
   
 end
