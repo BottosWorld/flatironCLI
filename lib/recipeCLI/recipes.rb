@@ -1,0 +1,6 @@
+class RecipeCLI::Recipes
+  
+  
+  
+  
+end
