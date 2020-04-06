@@ -10,8 +10,8 @@ class RecipeCLI::CLI
   
   def start
     puts "Hello there!"
-    puts "Getting Data from API... Please Wait"
-    puts "Loading Objects.."
+    # puts "Getting Data from API... Please Wait"
+    # puts "Loading Objects.."
     puts "Please enter what kind of recipe you're looking for:"
     input = gets.strip.downcase
     if (input != "quit")
@@ -27,10 +27,22 @@ class RecipeCLI::CLI
   end
   
   def display
-    @objects.each.with_index(1) {|recipes, index| puts "#{index}. #{recipes.mealtype}"}
+    @objects.each.with_index(1) {|recipes, index| puts "#{index}. #{recipes.mealType}"}
     puts "Please make a selection"
     #the above works, and so does the quit instance below. now I need to put together a list for the selection
-    #input = gets.strip.downcase
+    input = gets.strip.downcase
+    if(input.to_i > 0)
+      @recipes = @objects[input.to_i - 1]
+      puts "#{@recipes.ingr}"
+      display
+    elsif (input == "quit")
+      quit
+    elsif (input == "menu")
+      start
+    else 
+      puts "try again"
+      display
+    end 
   end
     
   def quit
