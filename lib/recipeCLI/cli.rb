@@ -1,35 +1,23 @@
 class RecipeCLI::CLI
   
-  #Give comments of description
-  #Start should greet user and give description
-  
-  #What are we trying to do with our application?
-  #Get data from api/scraper
-  #create new custom objects
-  #all within start of app
-  
   def start
     puts "Hello there!"
-    # puts "Getting Data from API... Please Wait"
-    # puts "Loading Objects.."
     puts "Please enter what kind of recipe you're looking for:"
     input = gets.strip.downcase
     if (input != "quit")
       @data = RecipeCLI::API.get_recipes(input)
       @objects = RecipeCLI::Recipes.all
-      #instance method below
       display
     else
-      #quit instance method
       quit
     end
-    #binding.pry
   end
   
   def display
+    puts "Here is a list of recipes that you're looking for:"
+    puts "--------------------------------------------------"
     @objects.each.with_index(1) {|recipes, index| puts "#{index}. #{recipes.mealType}"}
-    puts "Please make a selection"
-    #the above works, and so does the quit instance below. now I need to put together a list for the selection
+    puts "Please select a recipe that you would like more information from."
     input = gets.strip.downcase
     if(input.to_i > 0)
       @recipes = @objects[input.to_i - 1]
@@ -43,7 +31,10 @@ class RecipeCLI::CLI
       puts "try again"
       display
     end 
+    #I cannot seem to find a way for my API to bring in data to show a list, its just empty.
   end
+    
+    
     
   def quit
     puts "Thank you, come again!"
