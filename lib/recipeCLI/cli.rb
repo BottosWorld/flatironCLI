@@ -12,6 +12,14 @@ class RecipeCLI::CLI
     puts "Hello there!"
     puts "Getting Data from API... Please Wait"
     puts "Loading Objects.."
+    puts "Please enter what kind of recipe you're looking for:"
+    input = gets.strip.downcase
+    if (input != "quit")
+      @data = RecipeCLI::API.get_recipes(input)
+      @objects = RecipeCLI::Recipes.all
+    else
+      quit
+    end
     #binding.pry
   end
   
