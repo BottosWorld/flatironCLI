@@ -21,7 +21,7 @@ class RecipeCLI::CLI
     input = gets.strip.downcase
     if(input.to_i > 0)
       @recipes = @objects[input.to_i - 1]
-      puts "#{@recipes.ingredientLines}"
+      puts "#{@recipes}"
       display
     elsif (input == "quit")
       quit

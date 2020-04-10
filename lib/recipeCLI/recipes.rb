@@ -1,5 +1,5 @@
 class RecipeCLI::Recipes
-  attr_accessor :label, :ingredientLines
+  attr_accessor :hits, :recipe, :label, :ingredientLines
   @@all = []
   
   def initialize(hash)

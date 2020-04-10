@@ -10,8 +10,8 @@ class RecipeCLI::API
       recipe_obj = {
         hits: [{
           recipe: {
-            label => ["name"],
-            ingredientLines: @recipes_hash["Ingredients"]
+            label: @recipes_hash["hits"], #=> ["recipe" => "label"]]
+            ingredientLines: @recipes_hash["hits" => ["recipe" => "ingredientLines"]]
             }
         }]
       }
