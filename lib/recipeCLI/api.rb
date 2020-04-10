@@ -12,6 +12,7 @@ class RecipeCLI::API
         ingr: @recipes_hash["Ingredients"],
         time: @recipes_hash["Time to prep/cook"]
       }
+      binding.pry
     RecipeCLI::Recipes.new(recipe_obj)
     end
   end

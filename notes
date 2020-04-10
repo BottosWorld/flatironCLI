@@ -1,0 +1,122 @@
+[1] pry(RecipeCLI::API)> @recipes_hash
+=> {"q"=>"chicken",
+ "from"=>0,
+ "to"=>3,
+ "more"=>true,
+ "count"=>13382,
+ "hits"=>
+  [{"recipe"=>
+     {"uri"=>
+       "http://www.edamam.com/ontologies/edamam.owl#recipe_95fa6f5689286a4ffab774da45192494",
+      "label"=>"Thomato Chicken",
+      "image"=>
+       "https://www.edamam.com/web-img/a23/a2300a1c6b33bee0963f380782d48e27.jpg",
+      "source"=>"BBC Good Food",
+      "url"=>"http://www.bbcgoodfood.com/recipes/94602/",
+      "shareAs"=>
+       "http://www.edamam.com/recipe/thomato-chicken-95fa6f5689286a4ffab774da45192494/chicken/alcohol-free/591-722-cal",
+      "yield"=>3.0,
+      "dietLabels"=>["Low-Carb"],
+      "healthLabels"=>["Peanut-Free", "Tree-Nut-Free", "Alcohol-Free"],
+      "cautions"=>["Sulfites"],
+      "ingredientLines"=>
+      
+      
+       ["2 chicken breasts",
+        "2 tsp capers",
+        "1 large onion",
+        "6 cherry tomatoes",
+        "1.5 tsp oregano",
+        "3 teaspoons of tomato puree",
+        "1 red pepper",
+        "1 tin chopped tomatoes",
+        "5 sun-dried tomatoes",
+        "1 teaspoon basil",
+        "Salt and pepper to taste",
+        "Olive oil for frying chicken"],
+      "ingredients"=>
+       [{"text"=>"2 chicken breasts", "weight"=>348.0},
+        {"text"=>"2 tsp capers", "weight"=>4.733333333573413},
+        {"text"=>"1 large onion", "weight"=>150.0},
+        {"text"=>"6 cherry tomatoes", "weight"=>90.0},
+        {"text"=>"1.5 tsp oregano", "weight"=>1.5},
+        {"text"=>"3 teaspoons of tomato puree", "weight"=>15.125000000767159},
+        {"text"=>"1 red pepper", "weight"=>119.0},
+        {"text"=>"1 tin chopped tomatoes", "weight"=>190.0},
+        {"text"=>"5 sun-dried tomatoes", "weight"=>10.0},
+        {"text"=>"1 teaspoon basil", "weight"=>0.5000000000253606},
+        {"text"=>"Salt and pepper to taste", "weight"=>5.573150000006196},
+        
+        
+                {"text"=>"Salt and pepper to taste", "weight"=>2.786575000003098},
+        {"text"=>"Olive oil for frying chicken",
+         "weight"=>12.632473333347377}],
+      "calories"=>2027.6141152683626,
+      "totalWeight"=>1077.0594163082444,
+      "totalTime"=>0.0,
+      "totalNutrients"=>
+       {"ENERC_KCAL"=>
+         {"label"=>"Energy", "quantity"=>2027.6141152683626, "unit"=>"kcal"},
+        "FAT"=>{"label"=>"Fat", "quantity"=>174.47300776182743, "unit"=>"g"},
+        "FASAT"=>
+         {"label"=>"Saturated", "quantity"=>28.975328214889167, "unit"=>"g"},
+        "FATRN"=>{"label"=>"Trans", "quantity"=>0.3654, "unit"=>"g"},
+        "FAMS"=>
+         {"label"=>"Monounsaturated",
+          "quantity"=>116.08107867045206,
+          "unit"=>"g"},
+        "FAPU"=>
+         {"label"=>"Polyunsaturated",
+          "quantity"=>22.182989043614004,
+          "unit"=>"g"},
+        "CHOCDF"=>
+         {"label"=>"Carbs", "quantity"=>41.018837212570325, "unit"=>"g"},
+        "FIBTG"=>
+        
+        etc.
+        
+        
+         {"recipe"=>
+     {"uri"=>
+       "http://www.edamam.com/ontologies/edamam.owl#recipe_460a72418bb8eba10c59769b0751dc2b",
+      "label"=>"Chicken paprika",
+      "image"=>
+       "https://www.edamam.com/web-img/a8e/a8e6b4cd3856e78ad8f84f2a4d4ad8c3.jpg",
+      "source"=>"BBC",
+      "url"=>"http://www.bbc.co.uk/food/recipes/chickenpaprikawithle_80341",
+      "shareAs"=>
+       "http://www.edamam.com/recipe/chicken-paprika-460a72418bb8eba10c59769b0751dc2b/chicken/alcohol-free/591-722-cal",
+      "yield"=>6.0,
+      "dietLabels"=>["Low-Carb"],
+
+<page break> --- Press enter to continue ( q<enter> to break ) --- <page break>
+
+      "healthLabels"=>["Peanut-Free", "Tree-Nut-Free", "Alcohol-Free"],
+      "cautions"=>["Sulfites"],
+      "ingredientLines"=>
+       ["1 large chicken, jointed (or use 2 large chicken legs and 2 breasts, halved)",
+        "Salt",
+        "2 tbsp olive oil",
+        "Knob butter",
+        "1 onion, chopped",
+        "2-3 cloves garlic, chopped",
+        "1 tbsp sweet paprika",
+        "1 tbsp hot paprika",
+        "1 tbsp flour",
+        "285ml/½pint chicken stock",
+        "3 tbsp chopped fresh flatleaf parsley",
+        "2 red peppers, de-seeded and cut into 1cm/0.5in strips",
+        "4 large ripe tomatoes, roughly chopped",
+        "250ml/8fl oz sour cream"],
+      "ingredients"=>
+       [{"text"=>
+          "1 large chicken, jointed (or use 2 large chicken legs and 2 breasts,halved)",
+         "weight"=>1150.0},
+        {"text"=>"Salt", "weight"=>16.535164093620732},
+
+<page break> --- Press enter to continue ( q<enter> to break ) --- <page break>
+
+
+
+        
+        
