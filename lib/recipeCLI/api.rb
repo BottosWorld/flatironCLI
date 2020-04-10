@@ -8,9 +8,8 @@ class RecipeCLI::API
       
     else
       recipe_obj = {
-        mealType: @recipes_hash["Breakfast, Lunch, Dinner"],
-        ingr: @recipes_hash["Ingredients"],
-        time: @recipes_hash["Time to prep/cook"]
+        label: @recipes_hash["Breakfast, Lunch, Dinner"],
+        ingredientLines: @recipes_hash["Ingredients"]
       }
       binding.pry
     RecipeCLI::Recipes.new(recipe_obj)

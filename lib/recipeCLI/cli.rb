@@ -16,12 +16,12 @@ class RecipeCLI::CLI
   def display
     puts "Here is a list of recipes that you're looking for:"
     puts "--------------------------------------------------"
-    @objects.each.with_index(1) {|recipes, index| puts "#{index}. #{recipes.mealType}"}
-    puts "Please select a recipe that you would like more information from."
+    @objects.each.with_index(1) {|recipes, index| puts "#{index}. #{recipes.label}"}
+    puts "Please select a recipe that you'd like a list of ingredients for."
     input = gets.strip.downcase
     if(input.to_i > 0)
       @recipes = @objects[input.to_i - 1]
-      puts "#{@recipes.ingr}"
+      puts "#{@recipes.ingredientLines}"
       display
     elsif (input == "quit")
       quit
