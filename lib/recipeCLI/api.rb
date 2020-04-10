@@ -8,8 +8,12 @@ class RecipeCLI::API
       
     else
       recipe_obj = {
-        label: @recipes_hash["Breakfast, Lunch, Dinner"],
-        ingredientLines: @recipes_hash["Ingredients"]
+        hits: [{
+          recipe: {
+            label => ["name"],
+            ingredientLines: @recipes_hash["Ingredients"]
+            }
+        }]
       }
       binding.pry
     RecipeCLI::Recipes.new(recipe_obj)
